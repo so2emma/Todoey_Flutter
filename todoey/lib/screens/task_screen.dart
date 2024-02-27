@@ -16,14 +16,7 @@ class TasksScreen extends StatelessWidget {
           showModalBottomSheet(
             context: context,
             // isScrollControlled: true,
-            builder: (context) => AddTaskScreen(
-              addTaskCallback: (newTaskTitle) {
-                // setState(() {
-                //   tasks.add(Task(name: newTaskTitle));
-                // });
-                Navigator.pop(context);
-              },
-            ),
+            builder: (context) => AddTaskScreen(),
           );
         },
         backgroundColor: Colors.lightBlueAccent,
